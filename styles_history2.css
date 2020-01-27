@@ -1,0 +1,239 @@
+html, body{
+  
+    background-color: rgb(8, 8, 17);
+    font-family: 'Times New Roman', Times, serif;
+
+    margin: 0;
+    height: 100%;
+}
+ .logo{
+    background-color: rgb(5, 5, 10);
+    position: fixed ;
+    width: 100px;
+    padding-left:0%;
+    padding-right: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    z-index: 9;
+ }
+  
+ p{
+    top:10px;
+    position: relative;
+
+
+    margin-right: 100px;
+    text-align: justify;
+    padding-right: 25px;
+}
+
+
+
+ /*BARRA DE NAVAGACIÓ*/
+
+ nav{
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    background-color:  rgb(5, 5, 10);
+    margin-top: 55px;
+    width: 100vw;
+    text-align: center;
+    left: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(230, 96, 96) ;
+    z-index: 9;
+ }
+ nav a{
+    color: white;
+    text-decoration: none;
+    padding-top: 0px;   
+    
+ }  
+
+  
+li{
+    display: inline;
+    padding: 80px;
+    
+}
+   
+.nav2 li{
+    display: inline;
+    padding-top: 0px;
+    
+ }
+ nav a:hover{
+     color: rgb(63, 5, 5);
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: rgb(230, 96, 96);
+     text-shadow: 0px 0px 3px rgb(230, 96, 96);
+ }
+
+
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:  rgb(63, 5, 5);
+    transition: width .3s;
+    
+}
+.home{
+    color: rgb(63, 5, 5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(230, 96, 96);
+    text-shadow: 0px 0px 3px rgb(230, 96, 96);
+
+}
+
+nav a:hover::after {
+    width: 100%;
+    border: solid 0.5px;
+    border-color: rgb(230, 96, 96);
+     -webkit-border-color: rgb(230, 96, 96);
+   box-shadow: 0px 0px 3px rgb(230, 96, 96);
+}
+
+/***/
+ 
+.nav2{
+
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    background-color:  rgb(5, 5, 10);
+    margin-top: 115px;
+    width: 100vw;
+    text-align: center;
+    left: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(230, 96, 96) ;
+    border-top: 2px solid rgb(230, 96, 96);
+ }
+ main{
+    color: white;
+    position: relative;
+
+    padding-left: 145px;
+    right: 90px;
+    margin-right:500px;
+
+
+}
+aside{
+    padding-top: 300px;
+    position: absolute;
+    margin-top: -600px;
+}
+main h1{
+
+    top:10px;
+    position: relative;
+
+    margin-left: 250px;
+    color: rgb(63, 5, 5);
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: rgb(230, 96, 96);
+    
+}
+.imatge1{
+    top:200px;
+    position: relative;
+    width: 750px;
+    height: 400px;
+    margin-left: 300px;
+    text-align: justify;
+    padding-right: 25px;
+}
+.poster{
+    top:350px;
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin-left: 800px;
+    text-align: justify;
+    padding-right: 25px;
+}
+.contacte{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    top: 1450px;
+    background-color: black ;
+
+    color: white;
+    left: -0%;
+}
+.contacte h2{
+    z-index: 7;
+    position: relative;
+    margin-left: 47%;
+    margin-bottom: 1%;
+    color: rgb(63, 5, 5);
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: rgb(230, 96, 96);
+}
+.contacte p{
+    color: white;
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+section{
+    position: absolute;
+    top: 1400px;
+    left: 820px;
+
+}
+section img{
+    z-index: 9;
+    margin-top: 10px;
+    margin-left: 226px;
+    border-radius: 150%;
+    width: 200px;
+    height: 200px;
+}
+section p{
+    color: red;
+    z-index: 7;
+    margin-left: 265px;
+}
+.el{
+    margin-left: 285px;
+}
+.moving-left
+{
+    margin-top:80px;
+    z-index: 8;
+  height: 100px;
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+  width: 100px;
+}
+.moving-left:hover
+{   
+    opacity: 0;
+    filter: alpha(opacity=50);
+}
+@media screen and (max-width: 1250px) {
+    .demo, .char{
+            display: none;
+    
+        }
+    }
+    @media screen and (max-width: 1370px) {
+        .contacte{
+                display: none;
+        
+            }
+        }
